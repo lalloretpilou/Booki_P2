@@ -1,0 +1,61 @@
+/*
+style.css
+---------
+
+*/
+
+@font-face {
+    font-family: 'Raleway';                                     /* Mise en place de la police personalisée */
+    src: url('css/font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
+}
+#img
+{
+    display: inline-block;
+    justify-content: center;
+}
+#box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;              /* Transformation en flexbox */
+    padding: 0;                  /* Suppression des marges internes */
+}
+.navigation a:hover 
+{
+    border-top: 1px solid #0065FC;
+}
+.navigation a { 
+    margin: 1.5rem;               /* Marges externes (1 valeurs = 4 directions) */
+    padding: 1.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+
+    text-align: center;           /* Centrage du texte */   
+    color: rgb(0, 0, 0);        /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+}
+.navigation li 
+{
+    list-style-type: none ;       /* Suppression des puces */
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+}
+.titleLabel
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: bold;
+}
+.captionLabel
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: lighter;
+}
+.headingStyle
+{
+    display: flex;              /* Transformation en flexbox */
+    line-height: normal;
+}
