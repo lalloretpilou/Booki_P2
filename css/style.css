@@ -4,27 +4,72 @@ style.css
 
 */
 
+/*
+Font
+---------
+
+*/
 @font-face {
     font-family: 'Raleway';                                     /* Mise en place de la police personalisée */
     src: url('css/font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
 }
-#img
+
+/*
+label style
+---------
+*/
+
+.titleLabel
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: bold;
+    font-size: 16px;
+}
+.captionLabel
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: lighter;
+    font-size: 13px;
+}
+.firstSection
+{
+    display: flex;              /* Transformation en flexbox */
+    line-height: normal;
+    margin: 20px;
+}
+
+.pageTitle
+{
+    margin: 20px;
+}
+
+/*
+Navigation menu style && header
+---------
+*/
+
+.logo
 {
     display: inline-block;
     justify-content: center;
 }
-#box
+.headerStyle
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; /* Les elements sont en ligne */
+    flex-wrap: wrap; /* les elements passent a la ligne si il n'y a plus assez de place */
+    justify-content: space-between; /* Permet de laisser l'espace entre le logo et le menu */
+    margin: 20px;
 }
-ul{
-    display: flex;
-    align-items: center;
-}
+
+/*
+Navigation menu style
+*/
+
 .navigation {
-    display: flex;              /* Transformation en flexbox */
+    display: flex;               /* Transformation en flexbox pour mettre le menu a l'horizontal*/
+    flex-direction: row;
+    align-items: center;
     padding: 0;                  /* Suppression des marges internes */
 }
 .navigation a:hover 
@@ -44,18 +89,65 @@ ul{
     list-style-type: none ;       /* Suppression des puces */
     font-family: 'Raleway';       /* Utilisation de la police personalisée */
 }
-.titleLabel
+
+/*
+Footer
+---------
+*/
+
+.footerStyle{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+}
+.footerTitle
 {
     font-family: 'Raleway';       /* Utilisation de la police personalisée */
     font-weight: bold;
+    font-size: small;
 }
-.captionLabel
+.footerLabel
 {
     font-family: 'Raleway';       /* Utilisation de la police personalisée */
     font-weight: lighter;
+    font-size: small;
 }
-.headingStyle
+
+#hebergementMarseille
 {
-    display: flex;              /* Transformation en flexbox */
-    line-height: normal;
+    display: flex;
+}
+.hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    height: 500px;
+    width: 65%;
+    margin: 20px;
+    padding: 20px;
+}
+.lesPlusPopulaire
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    height: 300px;
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+}
+span
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: bold;
+    font-size: small;
+}   
+td
+{
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+    width: 300px;
+    margin: 400px;
 }

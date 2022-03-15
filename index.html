@@ -1,30 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <div id="box">
-            <link rel="stylesheet" href="css/style.css"/>
-            <div id="img">
-                <p><img src="assets/logo/Booki.png" alt="logo" width="80" height="50"></p>
-            </div>
-            <ul class="navigation">
-                <li>
-                    <a href="hebergement.html">Hébergement</a>
-                </li>
-                <li>
-                    <a href="activites.html">Activités</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <title>Booki - Marseille</title>
+    </head>
     <body>
-        <div id = "headingStyle">
-            <p class="titleLabel">Trouvez votre hébergement pour des vacances de rêves</p>
-            <p class="captionLabel">En plein centre ville ou en pleine nature</p>
-        </div>
-    </body>
-    <footer>
+        <header>
+            <div class="headerStyle">
+                <div class="logo">
+                    <p><img src="assets/logo/Booki.png" alt="logo" width="80" height="50"></p>
+                </div>
+                <nav class="navigation">
+                    <li>
+                        <a href="hebergement.html">Hébergement</a>
+                    </li>
+                    <li>
+                        <a href="activites.html">Activités</a>
+                    </li>
+                </nav>
+            </div>
+        </header>
+        <section id = "firstSection">
+            <div class = "pageTitle">
+                <p class="titleLabel">Trouvez votre hébergement pour des vacances de rêves</p>
+                <p class="captionLabel">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class = "searchBar">
+            </div>
+            <div class = "searchFilters">
+            </div>
+        </section>
+        <section id="hebergementMarseille">
+            <div class="hebergements">
+                <p  class="titleLabel">Hébergements à Marseille</p>
+                <table>
+                    <tr>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière" width="80" height="50"></p>
+                            <p class="footerTitle">Auberge de la Cannebière</p>
+                            <p class="captionLabel">Nuit à partir de <span>25€</span></p>
+                        </td>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" width="80" height="50"></p>
+                            <p class="footerTitle">Hôtel du port</p>
+                            <p class="captionLabel">Nuit à partir de <span>52€</span></p>
+                        </td>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" width="80" height="50"></p>
+                            <p class="footerTitle">Hôtel Les mouettes</p>
+                            <p class="captionLabel">Nuit à partir de <span>76€</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" width="80" height="50"></p>
+                            <p class="footerTitle">Hôtel de la mer</p>
+                            <p class="captionLabel">Nuit à partir de <span>46€</span></p>
+                        </td>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" width="80" height="50"></p>
+                            <p class="footerTitle">Auberge Le Panier</p>
+                            <p class="captionLabel">Nuit à partir de <span>23€</span></p>
+                        </td>
+                        <td>
+                            <p><img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" width="80" height="50"></p>
+                            <p class="footerTitle">Hôtel Chez Amina</p>
+                            <p class="captionLabel">Nuit à partir de <span>96€</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lesPlusPopulaire">
+                <aside>
+                    <p  class="titleLabel">Les plus populaires</p>
+                </aside>
+            </div>
+        </section>
+        <section id="activitesMarseille">
+            <div class="activites">
 
-    </footer>
+            </div>
+        </section>
+        <footer class="footerStyle">
+            <div>
+                <p class="footerTitle">A propos</p>
+                <ul>
+                    <li>
+                        <p class="captionLabel">Fonctionnement du site</p>
+                        <p class="captionLabel">Conditions générales de vente</p>
+                        <p class="captionLabel">Données et confidentialité</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p  class="footerTitle">Nos Hebergments</p>
+                <ul>
+                    <li>
+                        <p class="captionLabel">Charte qualité</p>
+                        <p class="captionLabel">Soumettre votre hôtel</p>
+                    </li>
+                </ul>
+            </div>
+            <div">
+                <p  class="footerTitle">Assistance</p>
+                <ul>
+                    <li>
+                        <p class="captionLabel">Centre d'aide</p>
+                        <p class="captionLabel">Nous contacter</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
