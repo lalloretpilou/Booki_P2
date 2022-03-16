@@ -141,13 +141,45 @@ span
     font-weight: bold;
     font-size: small;
 }   
+
 td
 {
-    border: 3px solid white;
-    padding: 10px;
-    border-radius: 10px;
+    position: relative;
+    align-items:center;
+    padding: 15px;
+}
+
+.card {
+    width: 220px;
+    height: 180px;
+    margin: 0px auto;
     background-color: white;
-    height: 40px;
-    width: 300px;
-    margin: 400px;
+    box-shadow: 0px 5px 20px #999;
+    border-width: 53px;
+    border-radius: 15px;
+    border-color: white;
+  }
+  .card a {
+    color: #333; 
+    text-decoration: none;
+  }
+
+  .card-image {
+    height: 100px;
+    position:relative;
+    overflow:hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .card-image img {
+    width: 150%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+  }
+
+  .card-body {
+    text-align:left;
+    padding-left: 6px;
 }
