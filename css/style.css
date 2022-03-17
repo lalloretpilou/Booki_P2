@@ -33,7 +33,7 @@ label style
 }
 .firstSection
 {
-    display: flex;              /* Transformation en flexbox */
+    display: flex;
     line-height: normal;
     margin: 20px;
 }
@@ -56,10 +56,8 @@ Navigation menu style && header
 .headerStyle
 {
     display: flex;
-    flex-direction: row; /* Les elements sont en ligne */
-    flex-wrap: wrap; /* les elements passent a la ligne si il n'y a plus assez de place */
-    justify-content: space-between; /* Permet de laisser l'espace entre le logo et le menu */
-    margin: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*
@@ -74,7 +72,7 @@ Navigation menu style
 }
 .navigation a:hover 
 {
-    border-top: 1px solid #0065FC;
+    border-top: 3px solid #0065FC;
 }
 .navigation a { 
     margin: 1.5rem;               /* Marges externes (1 valeurs = 4 directions) */
@@ -116,6 +114,7 @@ Footer
 #hebergementMarseille
 {
     display: flex;
+    
 }
 .hebergements
 {
@@ -147,31 +146,39 @@ td
     position: relative;
     align-items:center;
     padding: 15px;
+    flex-wrap: wrap;
 }
 
-.card {
+
+/*
+hebergementMarseille Card
+---------
+
+*/
+
+.hebergementMarseilleCard {
     width: 220px;
     height: 180px;
     margin: 0px auto;
     background-color: white;
-    box-shadow: 0px 5px 20px #999;
+    box-shadow: 0px 5px 20px rgb(133, 129, 129);
     border-width: 53px;
     border-radius: 15px;
     border-color: white;
   }
-  .card a {
+  .hebergementMarseilleCard a {
     color: #333; 
     text-decoration: none;
   }
 
-  .card-image {
+  .hebergementMarseilleCard-image {
     height: 100px;
     position:relative;
     overflow:hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-  .card-image img {
+  .hebergementMarseilleCard-image img {
     width: 150%;
     position: absolute;
     top:50%;
@@ -179,7 +186,8 @@ td
     transform: translate(-60%, -50%);
   }
 
-  .card-body {
+  .hebergementMarseilleCard-body {
     text-align:left;
     padding-left: 6px;
-}
+    line-height: 1em;
+}    
