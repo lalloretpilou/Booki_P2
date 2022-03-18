@@ -11,20 +11,13 @@ Font
 */
 @font-face {
     font-family:'Raleway';                                     /* Mise en place de la police personalisée */
-    src: url('css/font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
+    src: url('./font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
 }
 
 /*
 label style
 ---------
 */
-
-.page 
-{
-    margin: 2em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-}
 
 .titleLabel
 {
@@ -156,7 +149,7 @@ hebergementMarseille Card
     border-radius: 1.5rem;
     padding: 2em;
     width: 700px;
-    height: 100%;
+    height: 450px;
     margin-bottom: 10px;
 }
 .lesPlusPopulaire
