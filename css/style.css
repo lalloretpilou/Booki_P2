@@ -10,7 +10,7 @@ Font
 
 */
 @font-face {
-    font-family: 'Raleway';                                     /* Mise en place de la police personalisée */
+    font-family:'Raleway';                                     /* Mise en place de la police personalisée */
     src: url('css/font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
 }
 
@@ -19,15 +19,23 @@ label style
 ---------
 */
 
+.page 
+{
+    margin: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
 .titleLabel
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway', "Sans serif";;       /* Utilisation de la police personalisée */
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
 }
+
 .captionLabel
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway', "Sans serif";;       /* Utilisation de la police personalisée */
     font-weight: lighter;
     font-size: 13px;
 }
@@ -76,7 +84,6 @@ Navigation menu style
 }
 .navigation a { 
     margin: 1.5rem;               /* Marges externes (1 valeurs = 4 directions) */
-    padding: 1.4rem 0;            /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
 
     text-align: center;           /* Centrage du texte */   
     color: rgb(0, 0, 0);        /* Couleur du texte */
@@ -110,30 +117,13 @@ Footer
     font-weight: lighter;
     font-size: small;
 }
+  .fa-xs[data-active=true] {
+    color: #0065FC;
+  }
+  .fa-xs[data-active=false] {
+    color: #d9d9d9;
+  }
 
-#hebergementMarseille
-{
-    display: flex;
-    
-}
-.hebergements
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    height: 500px;
-    width: 65%;
-    margin: 20px;
-    padding: 20px;
-}
-.lesPlusPopulaire
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    height: 300px;
-    width: 25%;
-    margin: 20px;
-    padding: 20px;
-}
 span
 {
     font-family: 'Raleway';       /* Utilisation de la police personalisée */
@@ -141,13 +131,12 @@ span
     font-size: small;
 }   
 
-td
-{
-    position: relative;
-    align-items:center;
-    padding: 15px;
-    flex-wrap: wrap;
-}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+  }
 
 
 /*
@@ -156,15 +145,51 @@ hebergementMarseille Card
 
 */
 
+.MarseilleSection
+{
+    display: flex;
+    justify-content: space-between;
+}
+.hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2em;
+    width: 700px;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.lesPlusPopulaire
+{
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2em;
+    width: 300px;
+    height: 450px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+
+}
+.lesPlusPopulaireHeader
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .hebergementMarseilleCard {
-    width: 220px;
-    height: 180px;
-    margin: 0px auto;
     background-color: white;
-    box-shadow: 0px 5px 20px rgb(133, 129, 129);
-    border-width: 53px;
-    border-radius: 15px;
-    border-color: white;
+    padding: 0.370rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    padding: 0.5em;
+    flex-direction: row;
+
   }
   .hebergementMarseilleCard a {
     color: #333; 
@@ -186,8 +211,24 @@ hebergementMarseille Card
     transform: translate(-60%, -50%);
   }
 
-  .hebergementMarseilleCard-body {
-    text-align:left;
-    padding-left: 6px;
-    line-height: 1em;
-}    
+  .cardTitle
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: bold;
+    font-size: 13px;
+    margin:0;
+}
+.cardLabel
+{
+    font-family: 'Raleway', "Sans serif";       /* Utilisation de la police personalisée */
+    font-weight: lighter;
+    font-size: 13px;
+    margin:0;
+}
+.moreButton
+{
+    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
