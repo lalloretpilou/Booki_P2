@@ -19,6 +19,11 @@ label style
 ---------
 */
 
+html {
+    margin: auto;
+    max-width: 1440px;
+}
+
 .titleLabel
 {
     font-family: 'Raleway', "Sans serif";;       /* Utilisation de la police personalisée */
@@ -184,6 +189,7 @@ hebergementMarseille Card
     flex-direction: row;
 
   }
+
   .hebergementMarseilleCard a {
     color: #333; 
     text-decoration: none;
@@ -197,16 +203,14 @@ hebergementMarseille Card
     border-top-right-radius: 15px;
   }
   .hebergementMarseilleCard-image img {
-    width: 150%;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-60%, -50%);
   }
 
   .cardTitle
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: 13px;
     margin:0;
