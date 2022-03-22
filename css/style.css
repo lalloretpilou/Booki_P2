@@ -9,44 +9,72 @@ Font
 ---------
 
 */
-@font-face {
-    font-family:'Raleway';                                     /* Mise en place de la police personalisée */
-    src: url('./font/Raleway/Raleway-VariableFont_wght.ttf'); /* chemin d'accés de la police personalisée */
+/*@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+*/
+
+@font-face
+{
+    font-family:'Raleway';
+    src: url('./font/Raleway/static/Raleway-SemiBold.ttf');
+    font-weight: bold;
 }
 
-/*
-label style
----------
-*/
+@font-face
+{
+    font-family:'Raleway';
+    src: url('./font/Raleway/static/Raleway-Light.ttf');
+    font-weight: lighter;
+}
 
 html {
     margin: auto;
     max-width: 1440px;
 }
+.body
+{
+    margin: 30px;
+}
+
+/*
+label style
+---------
+
+Ci-après, l'ensemble des rendus des textes
+*/
 
 .titleLabel
 {
-    font-family: 'Raleway', "Sans serif";;       /* Utilisation de la police personalisée */
-    font-weight: bold;
-    font-size: 19px;
+    font-family: 'Raleway';
+    font-weight:bold;
+    font-size: 17px;
 }
 
 .captionLabel
 {
-    font-family: 'Raleway', "Sans serif";;       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: lighter;
     font-size: 13px;
 }
-.firstSection
+
+.sectionTitle
 {
-    display: flex;
-    line-height: normal;
-    margin: 20px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 17px;
+}
+.subtitle
+{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
 }
 
-.pageTitle
+span
 {
-    margin: 20px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: small;
 }
 
 /*
@@ -65,16 +93,157 @@ Navigation menu style && header
     flex-direction: row;
     justify-content: space-between;
 }
+.search, .filters, .searchFiltersSubtitle
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filters
+{
+    margin: 10px;
+}
+input
+{
+    font-weight: bold;
+    font-family: "Raleway";
+}
+
+#searchIcon
+{
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+    height: 45px;
+    width: 40px;
+    display:inline-block;
+    text-align: center;
+    vertical-align: bottom;
+
+}
+
+input{
+    height: 45px;
+    width: auto;
+
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: "Raleway";
+
+}
+
+.searchButton
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: "Raleway";
+    font-size: normal;
+    height: 45px;
+    width: 110px;
+}
+.searchButton:hover
+{
+    background-color:white;
+    color: #0065FC;
+}
+
+::placeholder
+{
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: normal;
+    color: black;
+}
+
+#infoIcon {
+    color: #0065FC;
+    height: 22px;
+    width: 22px;
+    min-height: 22px;
+    min-width: 22px;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    align-items: center;
+    margin-right: 4px;
+  }
+
+  .filterTitle
+  {
+    font-family: 'Raleway';
+    font-weight:bold;
+    font-size: 17px;
+    padding: 8px;;
+  }
+  .filterItems
+  {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+
+  }
+  #filterIcon
+  {
+    color: #0065FC;
+    height: 39px;
+    width: 39px;
+    min-height: 39px;
+    min-width: 39px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #DEEBFF;
+    margin-right: -20px;
+    z-index: 5;
+
+  }
+  .filterLabel
+  {
+    height: 35px;
+    width: 160px;
+    font-family: 'Raleway';
+    font-weight:bold;
+    font-size: 17px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    border: solid 2px #d9d9d9;
+    text-align: center;
+    border-left: hidden;
+    transition-duration: 0.5s;
+  }
+  .filterLabel:hover {
+    background-color: #f3f8ff;
+    transform: scale(1.035);
+  }
+
+  .filters
+  {
+    flex-wrap: wrap;
+    padding: auto;
+  }
 
 /*
 Navigation menu style
 */
 
 .navigation {
-    display: flex;               /* Transformation en flexbox pour mettre le menu a l'horizontal*/
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0;                  /* Suppression des marges internes */
+    padding: 0;
 }
 .navigation a:hover 
 {
@@ -83,14 +252,14 @@ Navigation menu style
 .navigation a { 
     margin: 1.5rem;               /* Marges externes (1 valeurs = 4 directions) */
 
-    text-align: center;           /* Centrage du texte */   
-    color: rgb(0, 0, 0);        /* Couleur du texte */
-    text-decoration: none;        /* Suppression du soulignement */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 .navigation li 
 {
-    list-style-type: none ;       /* Suppression des puces */
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    list-style-type: none ;
+    font-family: 'Raleway';
 }
 
 /*
@@ -105,37 +274,25 @@ Footer
 }
 .footerTitle
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: small;
 }
 .footerLabel
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: lighter;
     font-size: small;
 }
-  .fa-xs[data-active=true] {
-    color: #0065FC;
-  }
-  .fa-xs[data-active=false] {
-    color: #d9d9d9;
-  }
 
-span
+.fa-xs[data-active=true]
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
-    font-weight: bold;
-    font-size: small;
-}   
-
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    grid-auto-rows: minmax(100px, auto);
-  }
-
+    color: #0065FC;
+}
+.fa-xs[data-active=false]
+{
+    color: #d9d9d9;
+}
 
 /*
 hebergementMarseille Card
@@ -143,51 +300,79 @@ hebergementMarseille Card
 
 */
 
-.MarseilleSection
+.ActivitesDevision
 {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 20px;  
 }
-.hebergements
+
+.activitesMarseille
+{
+    background-color:white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 720px;
+    height: 450px;
+}
+
+.MarseilleDivision
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+
+.hebergementMarseille
 {
     background-color: #F2F2F2;
-    border-radius: 1.5rem;
-    padding: 2em;
-    width: 700px;
+    border-radius: 15px;
+    padding: 25px;
+    width: 720px;
     height: 450px;
-    margin-bottom: 10px;
 }
+.hebergementMarseilleItems
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+
+
+
 .lesPlusPopulaire
 {
     background-color: #F2F2F2;
-    border-radius: 1.5rem;
-    padding: 2em;
-    width: 300px;
+    border-radius: 15px;
+    padding: 25px;
+    width: 305px;
     height: 450px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    overflow: auto;
-
 }
-.lesPlusPopulaireHeader
+h3, i
 {
-    margin: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-between;
+
 }
 
 .hebergementMarseilleCard {
     background-color: white;
-    padding: 0.370rem;
+    padding: 5px;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    padding: 0.5em;
-    flex-direction: row;
-
+    height: 155px;
+    width: 200px;
+    margin: 10px;
+    transition-duration: 0.5s;
   }
 
   .hebergementMarseilleCard a {
@@ -207,17 +392,25 @@ hebergementMarseille Card
     height: 100%;
     position: absolute;
   }
+  .hebergementMarseilleCard-body
+  {
+      line-height: 18px;
+      margin-left: 5px;
+  }
+  .hebergementMarseilleCard:hover {
+    transform: scale(1.055);
+  }
 
   .cardTitle
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', "Sans serif"; ;
     font-weight: bold;
     font-size: 13px;
     margin:0;
 }
 .cardLabel
 {
-    font-family: 'Raleway', "Sans serif";       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';      /* Utilisation de la police personalisée */
     font-weight: lighter;
     font-size: 13px;
     margin:0;
