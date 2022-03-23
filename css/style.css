@@ -333,16 +333,15 @@ hebergementMarseille Card
 {
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 25px;
+    padding: 20px;
     width: 720px;
-    height: 450px;
+    height: 480px;
 }
 .hebergementMarseilleItems
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-evenly;
 }
 
 
@@ -354,7 +353,7 @@ hebergementMarseille Card
     border-radius: 15px;
     padding: 25px;
     width: 305px;
-    height: 450px;
+    height: 470px;
 }
 h3, i
 {
@@ -362,6 +361,68 @@ h3, i
     flex-direction: row;
     justify-content:space-between;
 
+}
+
+.lesPlusPopulairesItems
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+.lesPlusPopulairesCard
+{
+    background-color: white;
+    padding: 5px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.5s;
+    margin-bottom: 15px;
+}
+.lesPlusPopulairesCard a
+{
+    color: #333; 
+    text-decoration: none;
+}
+.lesPlusPopulairesCard-image
+{
+    height: 120px;
+    width: 45%;
+    position:relative;
+    overflow:hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.lesPlusPopulairesCard-image img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.lesPlusPopulairesCard-body
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 140px;
+    margin-top: -120px;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    padding-right: 10px;
+}
+.rate
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
+}
+.lesPlusPopulairesCard:hover
+{
+    transform: scale(1.055);
 }
 
 .hebergementMarseilleCard {
@@ -410,7 +471,7 @@ h3, i
 }
 .cardLabel
 {
-    font-family: 'Raleway';      /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: lighter;
     font-size: 13px;
     margin:0;
