@@ -366,10 +366,7 @@ h3, i
 .lesPlusPopulairesItems
 {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    height: auto;
-    width: auto;
 }
 
 .lesPlusPopulairesCard
@@ -380,6 +377,7 @@ h3, i
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 15px;
+    height: 110px;
 }
 .lesPlusPopulairesCard a
 {
@@ -388,8 +386,8 @@ h3, i
 }
 .lesPlusPopulairesCard-image
 {
-    height: 120px;
-    width: 45%;
+    height: 110px;
+    width: 130px;
     position:relative;
     overflow:hidden;
     border-top-left-radius: 15px;
@@ -405,13 +403,10 @@ h3, i
 }
 .lesPlusPopulairesCard-body
 {
-    display: flex;
-    flex-direction: column;
     line-height: 20px;
     margin-left: 140px;
-    margin-top: -120px;
-    justify-content: space-between;
-    margin-bottom: 38px;
+    margin-top: -115px;
+    margin-bottom: 30px;
     padding-right: 10px;
 }
 .rate
