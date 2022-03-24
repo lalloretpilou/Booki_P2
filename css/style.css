@@ -99,10 +99,16 @@ Navigation menu style && header
     flex-direction: row;
     align-items: center;
 }
-
-.filters
+.searchFiltersSubtitle
 {
-    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.pageTitle
+{
+    line-height: 5px;
+    margin-bottom: 30px;
 }
 input
 {
@@ -118,9 +124,11 @@ input
     background-color: #F2F2F2;
     height: 45px;
     width: 40px;
-    display:inline-block;
-    text-align: center;
-    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+
 
 }
 
@@ -151,11 +159,6 @@ input{
     height: 45px;
     width: 110px;
 }
-.searchButton:hover
-{
-    background-color:white;
-    color: #0065FC;
-}
 
 ::placeholder
 {
@@ -167,14 +170,16 @@ input{
 
 #infoIcon {
     color: #0065FC;
-    height: 22px;
-    width: 22px;
-    min-height: 22px;
-    min-width: 22px;
-    border: solid 1px #d9d9d9;
+    height: 24px;
+    width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    border: solid 1.5px #d9d9d9;
     border-radius: 100%;
+    display: flex;
     align-items: center;
-    margin-right: 4px;
+    justify-content: center;
+    margin-right: 2px;
   }
 
   .filterTitle
@@ -182,7 +187,8 @@ input{
     font-family: 'Raleway';
     font-weight:bold;
     font-size: 17px;
-    padding: 8px;;
+
+
   }
   .filterItems
   {
@@ -207,22 +213,22 @@ input{
 
     background-color: #DEEBFF;
     margin-right: -20px;
-    z-index: 5;
-
+    z-index: 15;
   }
   .filterLabel
   {
     height: 35px;
-    width: 160px;
+    width: auto;
     font-family: 'Raleway';
     font-weight:bold;
     font-size: 17px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px; 
     border: solid 2px #d9d9d9;
-    text-align: center;
     border-left: hidden;
     transition-duration: 0.5s;
+    padding-left: 40px;
+    padding-right: 20px;
   }
   .filterLabel:hover {
     background-color: #f3f8ff;
@@ -231,8 +237,9 @@ input{
 
   .filters
   {
+      display: flex;
     flex-wrap: wrap;
-    padding: auto;
+
   }
 
 /*
@@ -309,22 +316,13 @@ hebergementMarseille Card
     margin: 20px;  
 }
 
-.activitesMarseille
-{
-    background-color:white;
-    border-radius: 15px;
-    padding: 25px;
-    width: 720px;
-    height: 450px;
-}
-
 .MarseilleDivision
 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    margin-bottom: 55px;
 }
 
 
@@ -334,7 +332,7 @@ hebergementMarseille Card
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 20px;
-    width: 720px;
+    width: 730px;
     height: 480px;
 }
 .hebergementMarseilleItems
@@ -342,6 +340,7 @@ hebergementMarseille Card
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
 }
 
 
@@ -352,7 +351,7 @@ hebergementMarseille Card
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 25px;
-    width: 305px;
+    width: 320px;
     height: 470px;
 }
 h3, i
@@ -373,7 +372,7 @@ h3, i
 {
     background-color: white;
     padding: 5px;
-    border-radius: 1.25rem;
+    border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 15px;
@@ -407,7 +406,7 @@ h3, i
     margin-left: 140px;
     margin-top: -115px;
     margin-bottom: 30px;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 .rate
 {
@@ -473,8 +472,37 @@ h3, i
 }
 .moreButton
 {
-    font-family: 'Raleway';       /* Utilisation de la police personalisée */
+    font-family: 'Raleway';
     font-weight: bold;
     font-size: 13px;
     text-decoration: none;
 }
+
+
+.activitesMarseilleItems
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.wrapper {
+    display: flex;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  .column > div
+  {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.5s;
+    font-size: 4vh;
+    margin: 20px;
+    padding: 80px 125px;
+    flex: 1;
+  }
