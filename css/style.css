@@ -62,6 +62,12 @@ Ci-après, l'ensemble des rendus des textes
     font-weight: bold;
     font-size: 17px;
 }
+.ActivityTitle
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 14px;
+}
 .subtitle
 {
     font-family: 'Raleway';
@@ -491,18 +497,44 @@ h3, i
 .wrapper {
     display: flex;
   }
+
   .column {
     display: flex;
     flex-direction: column;
   }
+
   .column > div
   {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    font-size: 4vh;
     margin: 20px;
-    padding: 80px 125px;
     flex: 1;
+    width: 250px;
+    
   }
+  .column-image img
+  {
+    width: 100%;
+    height: 220px;
+    position:relative;
+    overflow:hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 90px;
+  }
+
+  .column-image-small img
+  {
+    width: 100%;
+    height: 120px;
+    position:relative;
+    overflow:hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+.column-body
+{
+    margin-left: 10px;
+}
