@@ -12,3 +12,7 @@ Analyser la maquette pour la découper et ainsi determiner les les différentes 
 Une fois le découpage efféctué, il convient de commencer à coder en commençant par le haeder et de descendre au fur et à mesure sur la page.
 
 ![ScreenShot](assets/cover.png)
+
+## La maquette & structure
+
+Bientôt

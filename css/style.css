@@ -7,9 +7,6 @@ style.css
 /*
 Font
 ---------
-
-*/
-/*@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 */
 
 @font-face {
@@ -139,8 +136,6 @@ input {
     align-items: center;
     justify-content: center;
     margin-right: 2px;
-
-
 }
 
 input {
@@ -154,7 +149,6 @@ input {
     box-sizing: border-box;
     font-weight: bold;
     font-family: "Raleway";
-
 }
 
 .searchButton {
@@ -217,7 +211,7 @@ input {
 }
 
 .filterLabel {
-    height: 35px;
+    height: 28px;
     width: auto;
     font-family: 'Raleway';
     font-weight: bold;
@@ -229,6 +223,12 @@ input {
     transition-duration: 0.5s;
     padding-left: 40px;
     padding-right: 20px;
+    padding-top: 8px;
+    text-decoration: none;
+}
+
+.filterLabel:visited {
+    color: black;
 }
 
 .filterLabel:hover {
