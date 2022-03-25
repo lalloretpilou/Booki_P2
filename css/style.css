@@ -24,13 +24,10 @@ Font
     font-weight: lighter;
 }
 
-.margingBody {
-    margin: 30px;
-}
-
 .margingPage {
     margin: auto;
     max-width: 1440px;
+    margin: 30px;
 }
 
 /*
