@@ -74,6 +74,23 @@ span {
     font-size: small;
 }
 
+.filterTitle {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.subtitleFooter {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
+    text-decoration: none;
+}
+
 /*
 Navigation menu style && header
 ---------
@@ -174,14 +191,6 @@ input {
     margin-right: 2px;
 }
 
-.filterTitle {
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: 17px;
-
-
-}
-
 .filterItems {
     display: flex;
     flex-direction: row;
@@ -260,29 +269,6 @@ Navigation menu style
 .navigation li {
     list-style-type: none;
     font-family: 'Raleway';
-}
-
-/*
-Footer
----------
-*/
-
-.footerStyle {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #F2F2F2;
-}
-
-.footerTitle {
-    font-family: 'Raleway';
-    font-weight: bold;
-    font-size: small;
-}
-
-.footerLabel {
-    font-family: 'Raleway';
-    font-weight: lighter;
-    font-size: small;
 }
 
 .fa-xs[data-active=true] {
@@ -517,10 +503,10 @@ h3, i {
     margin-left: 10px;
 }
 
-
-
-
-
+/*
+Footer
+---------
+*/
 
 #footer {
     display: flex;
@@ -536,7 +522,7 @@ h3, i {
     margin: 30px;
 }
 
-#footer div h2 {
+#footer div h3 {
     text-align: left;
 }
 
