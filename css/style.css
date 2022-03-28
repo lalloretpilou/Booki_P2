@@ -8,7 +8,7 @@ style.css
 Font
 ---------
 */
-@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css"); 
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
 
 @font-face {
     font-family: 'Raleway';
@@ -193,9 +193,9 @@ Filters
 */
 
 
-.economiqueFilterItems, 
-.animauxFilterItems, 
-.familialFilterItems, 
+.economiqueFilterItems,
+.animauxFilterItems,
+.familialFilterItems,
 .romantiqueFilterItems {
     font-family: 'Raleway';
     font-weight: bold;
@@ -213,63 +213,72 @@ Filters
     text-align: justify;
     margin: 20px;
 }
+
 a:link {
     text-decoration: none;
 }
-.economiqueFilter:visited, 
-.animauxFilter:visited, 
-.familialFilter:visited, 
-.romantiqueFilter:visited{
+
+.economiqueFilter:visited,
+.animauxFilter:visited,
+.familialFilter:visited,
+.romantiqueFilter:visited {
     color: black;
     text-decoration: none;
 }
-.romantiqueFilterItems:hover{
+
+.romantiqueFilterItems:hover {
     transform: scale(1.055);
     background: #DEEBFF;
 }
-.familialFilterItems:hover{
+
+.familialFilterItems:hover {
     transform: scale(1.055);
     background: #DEEBFF;
 }
-.animauxFilterItems:hover{
+
+.animauxFilterItems:hover {
     transform: scale(1.055);
     background: #DEEBFF;
 }
-.economiqueFilterItems:hover{
+
+.economiqueFilterItems:hover {
     transform: scale(1.055);
     background: #DEEBFF;
 }
 
 .economiqueFilterItems::before {
     color: #0065FC;
-    content: '\f53a';    
+    content: '\f53a';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
     padding: 13px;
     border-radius: 50%;
     margin-left: -30px;
 }
+
 .animauxFilterItems::before {
     color: #0065FC;
-    content: '\f6d3';    
+    content: '\f6d3';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
     padding: 13px;
     border-radius: 50%;
     margin-left: -30px;
 }
+
 .familialFilterItems::before {
     color: #0065FC;
-    content: '\f1ae';    
+    content: '\f1ae';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
     padding: 13px;
     border-radius: 50%;
     margin-left: -30px;
 }
+
 .romantiqueFilter::before {
     color: #0065FC;
-    content: '\f004';    
+    content: '\f004';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
     padding: 13px;
@@ -332,7 +341,7 @@ hebergementMarseille Card
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-bottom: 5%;
 }
 
@@ -384,13 +393,14 @@ h3, i {
     transition-duration: 0.5s;
     margin-bottom: 10%;
 }
+
 .lesPlusPopulairesCard a {
     color: #333;
     text-decoration: none;
 }
 
 .lesPlusPopulairesCard-image {
-    height: 100%; 
+    height: 100%;
     width: 45%;
     position: relative;
     overflow: hidden;
@@ -500,13 +510,13 @@ h3, i {
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     width: 24%;
     height: 100%;
     width: 100%;
 }
 
-.activiteCardLarge{
+.activiteCardLarge {
     height: 100%;
     width: 24%;
     background-color: white;
@@ -514,36 +524,55 @@ h3, i {
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 20px;
-    width: 24%;  
+    width: 24%;
     height: 100%;
 }
-.columnInter{
+
+.columnInter {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     height: 100%;
     width: 24%;
 }
+
 .activiteCard:hover {
     transform: scale(1.055);
 }
+
 .activiteCardLarge:hover {
     transform: scale(1.055);
 }
-.column-image {
-    height: 90%; 
+
+.activiteCardLarge-image {
     width: 100%;
+    height: 100%;
     position: relative;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     overflow: hidden;
 }
 
-.column-image img {
-        /*agit sur la taille de l'image*/
+.activiteCard-image {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+.activiteCardLarge-image img {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    object-fit: cover;
+}
+
+.activiteCard-image img {
+    width: 100%;
+    height: 100%;
+    position: relative;
     object-fit: cover;
 }
 
