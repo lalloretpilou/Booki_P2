@@ -186,6 +186,97 @@ input {
     margin-right: 2px;
 }
 
+
+/*
+Filters
+---------
+*/
+
+
+.economiqueFilterItems, 
+.animauxFilterItems, 
+.familialFilterItems, 
+.romantiqueFilterItems {
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 2px solid #F2F2F2;
+    border-left: hidden;
+
+    padding: 10px;
+    padding-bottom: 9px;
+    position: relative;
+    transition-duration: 0.5s;
+    text-align: justify;
+    margin: 20px;
+}
+a:link {
+    text-decoration: none;
+}
+.economiqueFilter:visited, 
+.animauxFilter:visited, 
+.familialFilter:visited, 
+.romantiqueFilter:visited{
+    color: black;
+    text-decoration: none;
+}
+.romantiqueFilterItems:hover{
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
+.familialFilterItems:hover{
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
+.animauxFilterItems:hover{
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
+.economiqueFilterItems:hover{
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
+
+.economiqueFilterItems::before {
+    color: #0065FC;
+    content: '\f53a';    
+    font-family: "Font Awesome 5 Free";
+    background: #DEEBFF;
+    padding: 13px;
+    border-radius: 50%;
+    margin-left: -30px;
+}
+.animauxFilterItems::before {
+    color: #0065FC;
+    content: '\f6d3';    
+    font-family: "Font Awesome 5 Free";
+    background: #DEEBFF;
+    padding: 13px;
+    border-radius: 50%;
+    margin-left: -30px;
+}
+.familialFilterItems::before {
+    color: #0065FC;
+    content: '\f1ae';    
+    font-family: "Font Awesome 5 Free";
+    background: #DEEBFF;
+    padding: 13px;
+    border-radius: 50%;
+    margin-left: -30px;
+}
+.romantiqueFilter::before {
+    color: #0065FC;
+    content: '\f004';    
+    font-family: "Font Awesome 5 Free";
+    background: #DEEBFF;
+    padding: 13px;
+    border-radius: 50%;
+    margin-left: -30px;
+}
+
 /*
 Navigation menu style
 */
@@ -299,7 +390,7 @@ h3, i {
 }
 
 .lesPlusPopulairesCard-image {
-    height: 100%;
+    height: 100%; 
     width: 45%;
     position: relative;
     overflow: hidden;
@@ -398,69 +489,44 @@ h3, i {
 .activitesMarseilleItems {
     display: flex;
     flex-direction: row;
+
 }
 
-
-.wrapper {
+.activitesMarseille {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.column>div {
-    /*background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 16px #0000002e;*/
-    margin: 10%;
-    flex: 1;
+.activiteCard {
+    height: 200px;
+    width: 150px;
     background-color: white;
-    padding: 5px;
-    border-radius: 1.25rem;
+    border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
-    height: 155px;
-    width: 200px;
     margin: 10px;
     transition-duration: 0.5s;
 }
-
-.column-image img {
+.column-image {
+    height: 90%; 
     width: 100%;
-    height: 90%;
     position: relative;
-    overflow: hidden;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
 }
 
-.column-image-small img {
+.column-image img {
+        /*agit sur la taille de l'image*/
     width: 100%;
-    height: 60%;
-    position: relative;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    height: 90%;
+    position: absolute;
     object-fit: cover;
 }
 
 .column-body {
     margin-left: 5%;
 }
-/*
-.activiteCard {
-    background-color: white;
-    padding: 5px;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
-    height: 155px;
-    width: 200px;
-    margin: 10px;
-    transition-duration: 0.5s;
-}*/
-
 
 /*
 Footer
@@ -487,73 +553,4 @@ Footer
 
 #footer div:nth-of-type(3) {
     text-align: left;
-}
-
-
-
-
-
-.economiqueFilterItems, .animauxFilterItems, .familialFilterItems, .romantiqueFilterItems {
-    font-family: 'Raleway';
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 17px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border: 2px solid #F2F2F2;
-    border-left: hidden;
-
-    padding: 10px;
-    padding-bottom: 9px;
-    position: relative;
-    transition-duration: 0.5s;
-    margin: 20px;
-}
-a:link {
-    text-decoration: none;
-}
-.economiqueFilter:visited, .animauxFilter:visited, .familialFilter:visited, .romantiqueFilter:visited{
-    color: black;
-    text-decoration: none;
-}
-.filterItems:hover{
-    transform: scale(1.055);
-    background: #DEEBFF;
-}
-
-.economiqueFilterItems::before {
-    color: #0065FC;
-    content: '\f53a';    
-    font-family: "Font Awesome 5 Free";
-    background: #DEEBFF;
-    padding: 13px;
-    border-radius: 50%;
-    margin-left: -30px;
-}
-.animauxFilterItems::before {
-    color: #0065FC;
-    content: '\f6d3';    
-    font-family: "Font Awesome 5 Free";
-    background: #DEEBFF;
-    padding: 13px;
-    border-radius: 50%;
-    margin-left: -30px;
-}
-.familialFilterItems::before {
-    color: #0065FC;
-    content: '\f1ae';    
-    font-family: "Font Awesome 5 Free";
-    background: #DEEBFF;
-    padding: 13px;
-    border-radius: 50%;
-    margin-left: -30px;
-}
-.romantiqueFilter::before {
-    color: #0065FC;
-    content: '\f004';    
-    font-family: "Font Awesome 5 Free";
-    background: #DEEBFF;
-    padding: 13px;
-    border-radius: 50%;
-    margin-left: -30px;
 }
