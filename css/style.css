@@ -504,36 +504,31 @@ h3, i {
 }
 
 .activiteCard {
-    height: 60%;
-    width: 25%;
+    height: 100%;
+    width: 100%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 20px;
-    width: 24%;
-    height: 100%;
-    width: 100%;
 }
 
 .activiteCardLarge {
-    height: 100%;
     width: 24%;
+    height: 100%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 20px;
-    width: 24%;
-    height: 100%;
 }
 
 .columnInter {
+    width: 24%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    height: 100%;
-    width: 24%;
 }
 
 .activiteCard:hover {
@@ -545,8 +540,6 @@ h3, i {
 }
 
 .activiteCardLarge-image {
-    width: 100%;
-    height: 100%;
     position: relative;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -554,8 +547,6 @@ h3, i {
 }
 
 .activiteCard-image {
-    width: 100%;
-    height: 100%;
     position: relative;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -571,7 +562,6 @@ h3, i {
 
 .activiteCard-image img {
     width: 100%;
-    height: 100%;
     position: relative;
     object-fit: cover;
 }
