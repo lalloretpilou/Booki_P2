@@ -485,41 +485,52 @@ h3, i {
     text-decoration: none;
 }
 
-
-.activitesMarseilleItems {
-    display: flex;
-    flex-direction: row;
-
-}
-
 .activitesMarseille {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 5px;
 }
 
 .activiteCard {
-    height: 200px;
-    width: 150px;
+    height: 175px;
+    width: 270px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
-    margin: 10px;
     transition-duration: 0.5s;
+    margin-bottom: 40px;
+}
+
+.activiteCardLarge{
+    height: 325px;
+    width: 270px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.5s;
+    margin-bottom: 40px;  
+}
+
+.activiteCard:hover {
+    transform: scale(1.055);
+}
+.activiteCardLarge:hover {
+    transform: scale(1.055);
 }
 .column-image {
     height: 90%; 
     width: 100%;
     position: relative;
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
     overflow: hidden;
 }
 
 .column-image img {
         /*agit sur la taille de l'image*/
     width: 100%;
-    height: 90%;
+    height: 100%;
     position: absolute;
     object-fit: cover;
 }
