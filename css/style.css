@@ -490,28 +490,33 @@ h3, i {
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 .activiteCard {
-    height: 175px;
-    width: 270px;
+    height: 60%;
+    width: 40%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .activiteCardLarge{
-    height: 325px;
-    width: 270px;
+    height: 100%;
+    width: 40%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 40px;  
 }
-
+.columnInter{
+    display: flex;
+    flex-direction: column;
+}
 .activiteCard:hover {
     transform: scale(1.055);
 }
