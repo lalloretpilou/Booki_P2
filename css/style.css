@@ -508,7 +508,7 @@ h3, i {
 
 .activiteCardLarge{
     height: 100%;
-    width: 25%;
+    width: 24%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
@@ -521,6 +521,8 @@ h3, i {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    height: 100%;
+    width: 24%;
 }
 .activiteCard:hover {
     transform: scale(1.055);
