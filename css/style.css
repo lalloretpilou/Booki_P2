@@ -490,32 +490,32 @@ h3, i {
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
-    width: 100%;
-    height: 100%;
 }
 
 .activiteCard {
     height: 60%;
-    width: 40%;
+    width: 25%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    margin-bottom: 30px;
+    margin-bottom: 20px;  
 }
 
 .activiteCardLarge{
     height: 100%;
-    width: 40%;
+    width: 25%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    margin-bottom: 40px;  
+    margin-bottom: 20px;  
 }
 .columnInter{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+    width: auto;
 }
 .activiteCard:hover {
     transform: scale(1.055);
