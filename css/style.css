@@ -490,6 +490,7 @@ h3, i {
     flex-direction: row;
     justify-content: space-between;
     margin: 5px;
+    width: 100%;
 }
 
 .activiteCard {
@@ -500,6 +501,9 @@ h3, i {
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
     margin-bottom: 20px;  
+    width: 24%;
+    height: 100%;
+    width: 100%;
 }
 
 .activiteCardLarge{
@@ -509,13 +513,14 @@ h3, i {
     border-radius: 15px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.5s;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
+    width: 24%;  
+    height: 100%;
 }
 .columnInter{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    width: auto;
 }
 .activiteCard:hover {
     transform: scale(1.055);
