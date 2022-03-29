@@ -1,0 +1,61 @@
+
+/*
+label style
+---------
+
+Ci-après, l'ensemble des rendus de textes
+*/
+
+.titleLabel {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.captionLabel {
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.sectionTitle {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.ActivityTitle {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
+}
+
+span {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: small;
+}
+
+.filterTitle {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.subtitleFooter {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: 13px;
+    color: grey;
+    text-decoration: none;
+}

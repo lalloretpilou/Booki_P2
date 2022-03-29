@@ -1,0 +1,71 @@
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MarseilleDivision {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hebergementMarseille {
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .hebergementMarseilleCard {
+        background-color: white;
+        padding: 5px;
+        border-radius: 1.25rem;
+        box-shadow: 0 0 16px #0000002e;
+        height: 155px;
+        width: 100%;
+        margin: 10px;
+        transition-duration: 0.5s;
+    }
+
+    .lesPlusPopulaire {
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .economiqueFilterItems,
+    .animauxFilterItems,
+    .familialFilterItems,
+    .romantiqueFilterItems {
+        font-family: 'Raleway';
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 15px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 2px solid #F2F2F2;
+        border-left: hidden;
+
+
+        padding-bottom: 9px;
+        position: relative;
+        transition-duration: 0.5s;
+        text-align: justify;
+
+    }

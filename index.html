@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="css/responsiveTablet.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/responsivePhone.css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <title>Booki - Marseille</title>
 </head>
@@ -40,7 +44,6 @@
                     <i id="searchIcon" class="fas fa-map-marker-alt"></i>
                     <input type="text" class="search" placeholder="Marseille, France">
                     <button class="searchButton" type="submit">Rechercher</button>
-                    </button>
                 </div>
             </div>
             <div class="filters">
@@ -99,7 +102,7 @@
                                     <p class="cardTitle">Hôtel du port</p>
                                 </div>
                                 <div class="hebergementMarseilleCard-excerpt">
-                                    <p class="cardLabel">Nuit à partir de <span>25€</span></p>
+                                    <p class="cardLabel">Nuit à partir de 25<span>€</span></p>
                                 </div>
                                 <div id="rate">
                                     <i class="fas fa-star fa-xs" data-active="true"></i>
@@ -121,7 +124,7 @@
                                     <p class="cardTitle">Hôtel Les mouettes</p>
                                 </div>
                                 <div class="hebergementMarseilleCard-excerpt">
-                                    <p class="cardLabel">Nuit à partir de <span>76€</span></p>
+                                    <p class="cardLabel">Nuit à partir de 76<span>€</span></p>
                                 </div>
                                 <div id="rate">
                                     <i class="fas fa-star fa-xs" data-active="true"></i>
@@ -143,7 +146,7 @@
                                     <p class="cardTitle">Hôtel de la mer</p>
                                 </div>
                                 <div class="hebergementMarseilleCard-excerpt">
-                                    <p class="cardLabel">Nuit à partir de <span>46€</span></p>
+                                    <p class="cardLabel">Nuit à partir de 46<span>€</span></p>
                                 </div>
                                 <div id="rate">
                                     <i class="fas fa-star fa-xs" data-active="true"></i>
@@ -187,7 +190,7 @@
                                     <p class="cardTitle">Hôtel Chez Amina</p>
                                 </div>
                                 <div class="hebergementMarseilleCard-excerpt">
-                                    <p class="cardLabel">Nuit à partir de <span>96€</span></p>
+                                    <p class="cardLabel">Nuit à partir de 96<span>€</span></p>
                                 </div>
                                 <div id="rate">
                                     <i class="fas fa-star fa-xs" data-active="true"></i>
@@ -200,7 +203,9 @@
                         </a>
                     </div>
                 </div>
-                <p class="moreButton">Afficher plus</p>
+                <div class="moreButton">
+                    <a href="#">Afficher plus</a>
+                </div>
             </div>
             <div class="lesPlusPopulaire">
                 <div class="lesPlusPopulaireHeader">
@@ -212,19 +217,23 @@
                     <div class="lesPlusPopulairesItems">
                         <div class="lesPlusPopulairesCard">
                             <a href="#">
-                                <img class="lesPlusPopulairesCard-image"
-                                    src="assets/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                    alt="Hôtel Le soleil du matin" />
-                                <div class="lesPlusPopulairesCard-body">
-                                    <p class="cardTitle">Hôtel Le soleil du matin</p>
-                                    <p class="cardLabel">Nuit à partir de <span>128€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
+                                <div class="interFlex">
+                                    <img class="lesPlusPopulairesCard-image"
+                                        src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                        alt="Hôtel Tout Bleu et blanc" />
+                                    <div class="lesPlusPopulairesCard-body">
+                                        <div class="lesPlusPopulairesCard-label">
+                                            <p class="cardTitle">Hôtel Le soleil du matin</p>
+                                            <p class="cardLabel">Nuit à partir de 128<span>€</span></p>
+                                        </div>
+                                        <div class="rate">
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -232,19 +241,23 @@
 
                         <div class="lesPlusPopulairesCard">
                             <a href="#">
-                                <img class="lesPlusPopulairesCard-image"
-                                    src="assets/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                    alt="Au coeur de l'eau Chambres d'hôtes" />
-                                <div class="lesPlusPopulairesCard-body">
-                                    <p class="cardTitle">Au coeur de l'eau Chambres d'hôtes</p>
-                                    <p class="cardLabel">Nuit à partir de <span>71€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="false"></i>
+                                <div class="interFlex">
+                                    <img class="lesPlusPopulairesCard-image"
+                                        src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                        alt="Hôtel Tout Bleu et blanc" />
+                                    <div class="lesPlusPopulairesCard-body">
+                                        <div class="lesPlusPopulairesCard-label">
+                                            <p class="cardTitle">Au coeur de l'eau Chambres d'hôtes</p>
+                                            <p class="cardLabel">Nuit à partir de 71<span>€</span></p>
+                                        </div>
+                                        <div class="rate">
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="false"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -254,19 +267,23 @@
 
                         <div class="lesPlusPopulairesCard">
                             <a href="#">
-                                <img class="lesPlusPopulairesCard-image"
-                                    src="assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                    alt="Hôtel Tout Bleu et blanc" />
-                                <div class="lesPlusPopulairesCard-body">
-                                    <p class="cardTitle">Hôtel Tout Bleu et blanc</p>
-                                    <p class="cardLabel">Nuit à partir de <span>68€</span></p>
-                                </div>
-                                <div class="rate">
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="true"></i>
-                                    <i class="fas fa-star fa-xs" data-active="false"></i>
+                                <div class="interFlex">
+                                    <img class="lesPlusPopulairesCard-image"
+                                        src="assets/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                        alt="Hôtel Tout Bleu et blanc" />
+                                    <div class="lesPlusPopulairesCard-body">
+                                        <div class="lesPlusPopulairesCard-label">
+                                            <p class="cardTitle">Hôtel Tout Bleu et blanc</p>
+                                            <p class="cardLabel">Nuit à partir de 68<span>€</span></p>
+                                        </div>
+                                        <div class="rate">
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="true"></i>
+                                            <i class="fas fa-star fa-xs" data-active="false"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -287,7 +304,7 @@
                         <img src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="Vieux Port" />
                     </div>
-                    <div class="column-body">
+                    <div class="activiteCard-body">
                         <p class="ActivityTitle">Vieux Port</p>
                     </div>
                 </a>
@@ -299,7 +316,7 @@
                             <img src="assets/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                 alt="Fort Pomègues" />
                         </div>
-                        <div class="column-body">
+                        <div class="activiteCard-body">
                             <p class="ActivityTitle">Fort Pomègues</p>
                         </div>
                     </a>
@@ -308,7 +325,7 @@
                             <img src="assets/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                                 alt="Iles du Frioul" />
                         </div>
-                        <div class="column-body">
+                        <div class="activiteCard-body">
                             <p class="ActivityTitle">Iles du Frioul</p>
                         </div>
                     </a>
@@ -319,7 +336,7 @@
                         <img src="assets/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                             alt="Parc National des Calanques" />
                     </div>
-                    <div class="column-body">
+                    <div class="activiteCard-body">
                         <p class="ActivityTitle">Parc National des Calanques</p>
                     </div>
                 </a>
@@ -331,7 +348,7 @@
                             <img src="assets/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                 alt="Notre Dame De La Garde" />
                         </div>
-                        <div class="column-body">
+                        <div class="activiteCard-body">
                             <p class="ActivityTitle">Notre Dame De La Garde</p>
                         </div>
                     </a>
@@ -339,10 +356,10 @@
                     <a href="#" class="activiteCard">
                         <div class="activiteCard-image">
                             <img src="assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                alt="Parc Longchamps" />
+                                alt="Parc Longchamp" />
                         </div>
-                        <div class="column-body">
-                            <p class="ActivityTitle">Parc Longchamps</p>
+                        <div class="activiteCard-body">
+                            <p class="ActivityTitle">Parc Longchamp</p>
                         </div>
                     </a>
                 </div>

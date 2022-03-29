@@ -13,6 +13,20 @@ Une fois le découpage efféctué, il convient de commencer à coder en commenç
 
 ![ScreenShot](assets/cover.png)
 
-## La maquette & structure
+## Maquette & Structure
+
+Bientôt
+## Code & Algo
+
+### Flex Box
+
+Bientôt
+
+## CResponsive
+
+### Mobile
+
+Bientôt
+### Tablette
 
 Bientôt
