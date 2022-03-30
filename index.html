@@ -11,27 +11,18 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <title>Booki - Marseille</title>
+    <link rel="icon" href="assets/logo/Booki.png">
 </head>
 
 <body>
+    <header class="header">
+        <img class="headerImg" src="assets/logo/Booki.png" alt="Booki" />
+        <nav class="headerNav">
+            <a class="headerNavItem" href="#" data-active="true">Hébergement</a>
+            <a class="headerNavItem" href="#" data-active="false">Activités</a>
+        </nav>
+    </header>
     <div class="margingPage">
-        <header>
-            <div class="headerStyle">
-                <div class="logo">
-                    <p><img src="assets/logo/Booki.png" alt="logo" width="80" height="50"></p>
-                </div>
-                <nav>
-                    <ul class="navigation">
-                        <li>
-                            <a href="#">Hébergement</a>
-                        </li>
-                        <li>
-                            <a href="#">Activités</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
         <section id="firstSection">
             <div class="pageTitle">
                 <p class="titleLabel">Trouvez votre hébergement pour des vacances de rêves</p>
@@ -40,11 +31,16 @@
         </section>
         <section class="SearchAndFilter">
             <div>
-                <div class="search">
-                    <i id="searchIcon" class="fas fa-map-marker-alt"></i>
-                    <input type="text" class="search" placeholder="Marseille, France">
-                    <button class="searchButton" type="submit">Rechercher</button>
-                </div>
+                <form class="searchForm" action="proceedFrom.html" method="GET">
+                    <span class="searchFormIcon">
+                      <i class="fas fa-map-marker-alt searchFormIconIcon"></i>
+                    </span>
+                    <input class="searchFormSearchInput" type="search" placeholder="Marseille, France" size="1" />
+                    <button class="searchFormSubmitInput">
+                      <span class="searchFormSubmitInputText">Rechercher</span>
+                      <i class="searchFormSubmitInputIcon fas fa-search"></i>
+                    </button>
+                  </form>
             </div>
             <div class="filters">
                 <div class="economiqueFilterItems">
@@ -61,7 +57,7 @@
                 </div>
             </div>
             <div class="searchFiltersSubtitle">
-                <i id="infoIcon" class="fas fa-info fa-2xs"></i>
+                <i id="infoIcon" class="fas fa-info"></i>
                 <p class="subtitle">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
@@ -383,7 +379,7 @@
                 <a class="subtitleFooter" href="#">Soumettre votre hôtel</a>
             </div>
             <div>
-                <h3 class="ActivityTitle">Assistance</h3>
+                <h3 class="titleFooter">Assistance</h3>
                 <a class="subtitleFooter" href="#">Centre d'aide</a>
                 <a class="subtitleFooter" href="#">Nous contacter</a>
             </div>

@@ -49,6 +49,12 @@ span {
     font-size: 15px;
 }
 
+.titleFooter {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 14px;
+}
+
 .subtitleFooter {
     display: flex;
     flex-direction: column;
@@ -58,4 +64,24 @@ span {
     font-size: 13px;
     color: grey;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    .titleFooter {
+        font-family: 'Raleway';
+        font-weight: bolder;
+        font-size: 19px;
+    }
+    
+    .subtitleFooter {
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        font-family: 'Raleway';
+        font-weight: lighter;
+        font-size: 18px;
+        color: grey;
+        text-decoration: none;
+    }
 }

@@ -1,71 +1,178 @@
-    #footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #f2f2f2;
-    }
+.margingPage {
+    margin: 20px;
+}
 
-    .filters {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.pageTitle {
+    justify-content: left;
+    line-height: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
 
-    .MarseilleDivision {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .hebergementMarseille {
-        background-color: white;
-        border-radius: 15px;
-        padding: 20px;
-        width: 100%;
-    }
+.MarseilleDivision {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
 
-    .hebergementMarseilleCard {
-        background-color: white;
-        padding: 5px;
-        border-radius: 1.25rem;
-        box-shadow: 0 0 16px #0000002e;
-        height: 155px;
-        width: 100%;
-        margin: 10px;
-        transition-duration: 0.5s;
-    }
+.hebergementMarseille {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
 
-    .lesPlusPopulaire {
-        background-color: #F2F2F2;
-        border-radius: 15px;
-        padding: 20px;
-        width: 100%;
-    }
+.hebergementMarseilleCard {
+    background-color: white;
+    padding: 5px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    height: 155px;
+    width: 100%;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
 
-    .filters {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.lesPlusPopulaire {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
 
-    .economiqueFilterItems,
-    .animauxFilterItems,
-    .familialFilterItems,
-    .romantiqueFilterItems {
-        font-family: 'Raleway';
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 15px;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
-        border: 2px solid #F2F2F2;
-        border-left: hidden;
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.economiqueFilterItems,
+.animauxFilterItems,
+.familialFilterItems,
+.romantiqueFilterItems {
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 2px solid #F2F2F2;
+    border-left: hidden;
 
 
-        padding-bottom: 9px;
-        position: relative;
-        transition-duration: 0.5s;
-        text-align: justify;
+    padding-bottom: 9px;
+    position: relative;
+    transition-duration: 0.5s;
+    text-align: justify;
+}
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+.activitesMarseille {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activiteCard {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.5s;
+    margin-bottom: 20px;
+}
+
+.activiteCardLarge {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.5s;
+}
+
+.columnInter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.activiteCardLarge-image {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.activiteCard-image {
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    height: 80%;
+}
+
+.activiteCardLarge-image img {
+    width: 100%;
+    height: 125px;
+    position: relative;
+    object-fit: cover;
+}
+
+.activiteCard-image img {
+    width: 100%;
+    height: 125px;
+    position: relative;
+    object-fit: cover;
+}
+
+.activiteCard-body {
+    margin-left: 5%;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+#footer div {
+    display: table-cell;
+    width: auto;
+    text-align: left;
+    margin: 30px;
+}
+
+#footer div h3 {
+    text-align: left;
+}
+
+#footer div:nth-of-type(3) {
+    text-align: left;
+}
+.searchFormSubmitInputText {
+    display: none !important;
+  }
+  .searchFormSubmitInputIcon {
+    display: block !important;
+  }
