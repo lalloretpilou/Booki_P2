@@ -13,25 +13,19 @@ Une fois le découpage efféctué, il convient de commencer à coder en commenç
 
 ![ScreenShot](assets/cover.png)
 
-## Maquette & Structure
-
-# Sections
+## Détails du projet
+### Sections
 ![ScreenShot](assets/section1.png)
 ![ScreenShot](assets/section2.png)
 
 La page web se compose principalement de deux grandes sections
--> Les hebergements et les activités.
-## Code & Algo
-
-### Flex Box
+-> Les hebergements 
+-> Les activités
+### Code & Algo
 
 Nous utilisons la technologie 'FlexBox" dans ce projet. Grâce à celle-ci, nous pouvons disposer l'ensemble des éléments sur la page.
+### Responsive
 
-## CResponsive
-
-### Mobile
-
-Bientôt
-### Tablette
+### Mobile & Tablette
 
 Bientôt
