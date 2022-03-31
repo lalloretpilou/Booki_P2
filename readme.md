@@ -1,10 +1,11 @@
 # Booki Project
 
-## Introduction
+## Présentation
 
 Il s'agit de mon premier projet en HTML5 et CSS3.
 
-L'objectif de ce projet est d'utiliser une maquette qui est imposée par l'UX designer pour l'intégrer à notre site. 
+L'objectif de ce projet est d'utiliser une maquette qui est imposée par l'UX designer de l'entreprise pour l'intégrer à notre site. Pour cela avant de coder il ne faut réaliser une maquette afon ded eterminer la structure a la fois globale de la page et celui de chaque élément.
+Il nous est aussi demandé de faire le responsive de la page à savoir l'adpater pour les écrans de petites tailles (mobile).
 
 ![ScreenShot](assets/cover.png)
 ## Détails du projet
@@ -14,6 +15,7 @@ Analyser la maquette pour la découper et ainsi determiner les les différentes 
 
 Une fois le découpage efféctué, il convient de commencer à coder en commençant par le haeder et de descendre au fur et à mesure sur la page.
 ### Sections
+
 ![ScreenShot](assets/section1.png)
 ![ScreenShot](assets/section2.png)
 
