@@ -126,12 +126,12 @@ Search bar
     display: inline-flex;
     max-width: 100%;
     overflow: auto;
-    height: 40px;
+    height: 45px;
 }
 
 .searchFormIcon {
     background-color: #F2F2F2;
-    padding: 5px 20px;
+    padding: 15px 15px;
     border-radius: 15px 0 0 15px;
     text-align: justify;
 }
@@ -147,10 +147,10 @@ Search bar
     border-bottom: #F2F2F2 1px solid;
     padding: 0 10px;
     box-sizing: border-box;
-    width: 14rem;
-    font-size: 15px;
+    width: 250px;
     font-weight: bold;
     font-family: "Raleway";
+    font-size: 15px;
 }
 
 .searchFormSearchInput::placeholder {
@@ -168,7 +168,6 @@ Search bar
     border-radius: 0 15px 15px 0;
     padding: 0 25px;
     font-family: "Raleway";
-    font-size: 15px;
     cursor: pointer;
 }
 

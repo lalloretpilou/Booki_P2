@@ -6,7 +6,7 @@ Il s'agit de mon premier projet en HTML5 et CSS3.
 
 L'objectif de ce projet est d'utiliser une maquette qui est imposée par l'UX designer pour l'intégrer à notre site. 
 
-![ScreenShot](assets/cover.png)## Détails du projet
+![ScreenShot](assets/cover.png)
 ## Détails du projet
 ### Maquette
 

@@ -37,7 +37,7 @@ Ci-après, l'ensemble des rendus de textes
     color: grey;
 }
 
-span {
+.priceBold {
     font-family: 'Raleway';
     font-weight: bold;
     font-size: small;
