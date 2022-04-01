@@ -35,7 +35,7 @@ Font
 }
 
 /*
-faire défiler lentement le scrolling poru les liens ancrés
+faire défiler lentement le scrolling pour les liens ancrés
 -----------------------
 */
 
@@ -64,6 +64,10 @@ Navigation menu style && header
 .headerNav {
     display: flex;
     align-items: center;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .headerNavItem {
@@ -233,10 +237,6 @@ Filters
     margin: 20px;
 }
 
-a:link {
-    text-decoration: none;
-}
-
 .economiqueFilter:visited,
 .animauxFilter:visited,
 .familialFilter:visited,
@@ -245,24 +245,26 @@ a:link {
     text-decoration: none;
 }
 
-.romantiqueFilterItems:hover {
-    transform: scale(1.055);
-    background: #DEEBFF;
-}
+@media screen and (min-width: 992px) {
+    .romantiqueFilterItems:hover {
+        transform: scale(1.055);
+        background: #DEEBFF;
+    }
 
-.familialFilterItems:hover {
-    transform: scale(1.055);
-    background: #DEEBFF;
-}
+    .familialFilterItems:hover {
+        transform: scale(1.055);
+        background: #DEEBFF;
+    }
 
-.animauxFilterItems:hover {
-    transform: scale(1.055);
-    background: #DEEBFF;
-}
+    .animauxFilterItems:hover {
+        transform: scale(1.055);
+        background: #DEEBFF;
+    }
 
-.economiqueFilterItems:hover {
-    transform: scale(1.055);
-    background: #DEEBFF;
+    .economiqueFilterItems:hover {
+        transform: scale(1.055);
+        background: #DEEBFF;
+    }
 }
 
 .economiqueFilterItems::before {
@@ -574,11 +576,11 @@ h3, i {
     }
 
     .hebergementMarseilleCard:hover {
-        transform: scale(1.055);
+        transform: scale(1.095);
     }
 
     .lesPlusPopulairesCard:hover {
-        transform: scale(1.055);
+        transform: scale(1.095);
     }
 
     .navigation a:hover {

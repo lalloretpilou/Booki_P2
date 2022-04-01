@@ -1,4 +1,3 @@
-![ScreenShot](assets/logo/Booki@3x.png)
 # Booki Project
 
 ## Présentation
