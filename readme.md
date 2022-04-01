@@ -27,8 +27,6 @@ La page web se compose principalement de deux grandes sections:
 
 Chaque section fonctionne de manière autonome et leurs tailles sont gerées en % afin de faciliter le coder et d'automatiser la disposition des elements sur l'écran.
 
-![ScreenShot](assets/hebergements.png | width=100 height=100) ![ScreenShot](assets/activies.png "Activités")
-
 ### Code & Algo
 
 Sans grande suprise, j'utilise HTML5 et css3 pour l'ensemble de la page web.
