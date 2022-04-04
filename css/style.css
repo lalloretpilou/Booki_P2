@@ -1,7 +1,4 @@
 @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
-@import "labelsStyles.css";
-@import "responsivePhone.css";
-@import "responsiveTablet.css";
 
 /*
 Font
@@ -26,21 +23,68 @@ Font
     font-weight: lighter;
 }
 
-@media screen and (min-width: 992px) {
-    .margingPage {
-        margin: auto;
-        max-width: 1440px;
-        margin: 30px;
-    }
-}
-
 /*
-faire défiler lentement le scrolling pour les liens ancrés
------------------------
+label style
+---------
 */
 
-html {
-    scroll-behavior: smooth;
+.titleLabel {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: normal;
+}
+
+.captionLabel {
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: small;
+}
+
+.sectionTitle {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: large;
+}
+
+.ActivityTitle {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: normal;
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: small;
+    color: grey;
+}
+
+.filterTitle {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: large;
+}
+
+.titleFooter {
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: small;
+}
+
+.subtitleFooter {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: small;
+    color: grey;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
 }
 
 /*
@@ -52,12 +96,10 @@ Navigation menu style && header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
-    margin: auto;
 }
 
 .headerImg {
-    padding: 0 30px;
+    padding: 0px;
     height: 50px;
 }
 
@@ -95,7 +137,6 @@ a:link {
     .header {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .headerNavItem {
@@ -245,26 +286,24 @@ Filters
     text-decoration: none;
 }
 
-@media screen and (min-width: 992px) {
-    .romantiqueFilterItems:hover {
-        transform: scale(1.055);
-        background: #DEEBFF;
-    }
+.romantiqueFilterItems:hover {
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
 
-    .familialFilterItems:hover {
-        transform: scale(1.055);
-        background: #DEEBFF;
-    }
+.familialFilterItems:hover {
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
 
-    .animauxFilterItems:hover {
-        transform: scale(1.055);
-        background: #DEEBFF;
-    }
+.animauxFilterItems:hover {
+    transform: scale(1.055);
+    background: #DEEBFF;
+}
 
-    .economiqueFilterItems:hover {
-        transform: scale(1.055);
-        background: #DEEBFF;
-    }
+.economiqueFilterItems:hover {
+    transform: scale(1.055);
+    background: #DEEBFF;
 }
 
 .economiqueFilterItems::before {
@@ -292,7 +331,7 @@ Filters
     content: '\f1ae';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
-    padding: 13px;
+    padding: 13px 15px;
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -318,6 +357,7 @@ Filters
 .plusPopulaireIcon {
     cursor: pointer;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -367,7 +407,7 @@ hebergementMarseille Card
 .hebergementMarseille {
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
     width: 60%;
 }
 
@@ -375,7 +415,8 @@ hebergementMarseille Card
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
+
 }
 
 .lesPlusPopulaire {
@@ -458,10 +499,9 @@ h3, i {
     padding: 5px;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
-    height: 155px;
-    width: 200px;
-    margin: 10px;
-    transition-duration: 0.5s;
+    height: 55%;
+    width: 28%;
+    margin-bottom: 40px;
 }
 
 .hebergementMarseilleCard a {
@@ -555,38 +595,15 @@ h3, i {
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 992px) {
-    .activiteCard:hover {
-        transform: scale(1.055);
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        color: #0065FC;
-    }
-
-    .activiteCardLarge:hover {
-        transform: scale(1.055);
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        color: #0065FC;
-    }
-
-    .hebergementMarseilleCard-body {
-        line-height: 18px;
-        margin-left: 5px;
-    }
-
-    .hebergementMarseilleCard:hover {
-        transform: scale(1.095);
-    }
-
-    .lesPlusPopulairesCard:hover {
-        transform: scale(1.095);
-    }
-
-    .navigation a:hover {
-        border-top: 3px solid #0065FC;
-    }
+.hebergementMarseilleCard-body {
+    line-height: 18px;
+    margin-left: 5px;
 }
+
+.navigation a:hover {
+    border-top: 3px solid #0065FC;
+}
+
 
 .activiteCardLarge-image {
     position: relative;
@@ -627,24 +644,21 @@ Footer
 ---------
 */
 
-#footer {
+.footer {
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.footerColumn {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #f2f2f2;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-#footer div {
-    display: table-cell;
-    width: 33.333%;
-    text-align: left;
-    margin: 30px;
-}
-
-#footer div h3 {
-    text-align: left;
-}
-
-#footer div:nth-of-type(3) {
-    text-align: left;
+.footerColumnItem {
+    width: 30%;
+    padding: 20px 20px;
 }
