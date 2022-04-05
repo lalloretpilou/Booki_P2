@@ -689,3 +689,21 @@ Footer
         margin: 0;
     }
 }
+
+
+@media screen and (max-device-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    .headerNav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+}
