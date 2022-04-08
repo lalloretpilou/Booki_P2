@@ -251,7 +251,7 @@ Filters
     position: relative;
     transition-duration: 0.5s;
     text-align: justify;
-    margin: 5%;
+    margin: 4%;
 }
 
 .economiqueFilter:visited,
@@ -380,11 +380,6 @@ h3, i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.lesPlusPopulairesItems {
-    display: flex;
-    flex-direction: column;
 }
 
 .interFlex {
@@ -610,9 +605,13 @@ Footer
     padding: 20px 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
 
-    .header, .SearchAndFilter, .firstSection {
+    .filterTitle {
+        display: none;
+    }
+
+    .header, .firstSection {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -620,23 +619,21 @@ Footer
         text-align: center;
     }
 
+    .searchFormSection {
+        text-align: center;
+    }
+
     .MarseilleDivision {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        width: 100%;
+        max-width: 100%;
     }
 
-    .hebergementMarseille {
+    .hebergementMarseille, .lesPlusPopulaire {
         background-color: white;
         padding: 20px;
         width: 100%;
-    }
-
-    .lesPlusPopulaire {
-        background-color: white;
-        padding: 2%;
-        width: 90%;
     }
 
     .lesPlusPopulairesItems {
@@ -662,13 +659,6 @@ Footer
         text-decoration: none;
     }
 
-    .sectionTitleTablet {
-        color: #0065FC;
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 20px;
-    }
-
     .cardTitle {
         font-family: 'Raleway', "Sans serif";
         font-weight: 700;
@@ -688,21 +678,23 @@ Footer
 
 
 @media screen and (max-width: 768px) {
-    body {
-        margin: auto;
-        max-width: auto;
-    }
-
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    .header, .SearchAndFilter, .firstSection {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .headerNav {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: auto;
         justify-content: space-between;
     }
 
@@ -720,31 +712,28 @@ Footer
     .MarseilleDivision {
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        width: 100%;
+        width: auto;
     }
 
     .hebergementMarseille {
         background-color: white;
         padding: 20px;
-        width: 100%;
+        width: auto;
     }
 
     .hebergementMarseilleItems {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .lesPlusPopulaire {
         background-color: #F2F2F2;
-        width: 100%;
+        width: auto;
         border-radius: 0px;
         margin: 0%;
-    }
-
-    .lesPlusPopulairesItems {
-        display: flex;
         flex-direction: column;
+
     }
 
     .hebergementMarseilleCard {
@@ -753,45 +742,62 @@ Footer
         border-radius: 1.25rem;
         box-shadow: 0 0 16px #0000002e;
         height: 55%;
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
     }
 
     .lesPlusPopulairesCard {
-        width: 100%;
+        width: auto;
         height: 85%;
         background-color: white;
-        padding: 3px;
         border-radius: 15px;
         box-shadow: 0 0 16px #0000002e;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .activitesMarseille {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
     }
 
     .columnInter {
         width: auto;
         height: 100%;
-        display: flex;
-        flex-direction: column;
+        margin: 0px;
     }
 
     .activiteCard {
+        width: auto;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0 0 16px #0000002e;
+        margin: 10px;
+    }
+
+    .activiteCardLarge-image img {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .activiteCard-image img {
+        width: 100%;
+        height: 120px;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .activiteCard-body {
+        margin: 5px;
     }
 
     .activiteCardLarge {
         width: auto;
-        height: 100%;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0 0 16px #0000002e;
+        margin: 10px;
     }
 
     .filters {
@@ -845,21 +851,29 @@ Footer
         transition-duration: 0.5s;
         text-align: justify;
     }
+
     .searchFiltersSubtitle {
         margin-top: 0px;
         margin-bottom: 25px;
         text-align: left;
     }
+
     .footerColumn {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        max-width: auto;
         margin: auto;
         padding: 0 10px;
         box-sizing: border-box;
     }
+
     .footerColumnItem {
         width: 30%;
         padding: 10px 10px;
+    }
+
+    .lesPlusPopulairesItems {
+        display: flex;
+        flex-direction: column;
     }
 }
