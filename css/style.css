@@ -251,7 +251,7 @@ Filters
     position: relative;
     transition-duration: 0.5s;
     text-align: justify;
-    margin: 4%;
+    margin: 2%;
 }
 
 .economiqueFilter:visited,
@@ -607,8 +607,27 @@ Footer
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
 
+    .headerNavItem[data-active=true] {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .headerNavItem:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
     .filterTitle {
         display: none;
+    }
+    .filters {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
     }
 
     .header, .firstSection {
@@ -627,18 +646,12 @@ Footer
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        max-width: 100%;
+        width: auto;
     }
 
     .hebergementMarseille, .lesPlusPopulaire {
         background-color: white;
-        padding: 20px;
-        width: 100%;
-    }
-
-    .lesPlusPopulairesItems {
-        display: flex;
-        flex-direction: row;
+        width: auto;
     }
 
     .lesPlusPopulairesCard {
@@ -648,8 +661,21 @@ Footer
         padding: 3px;
         border-radius: 15px;
         box-shadow: 0 0 16px #0000002e;
-        margin-right: 20px;
-        margin-bottom: 0px;
+        margin: 0px;
+    }
+    .lesPlusPopulairesCard-image {
+        height: 120px;
+        width: 120px;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        object-fit: cover;
+    }
+
+    .lesPlusPopulairesItems {
+        display: flex;
+        flex-direction: row;
     }
 
     .moreButton {
@@ -707,6 +733,7 @@ Footer
     .headerNavItem:hover {
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
+        border-top: none;
     }
 
     .MarseilleDivision {
