@@ -621,7 +621,6 @@ Footer
         display: flex;
         align-items: flex-start;
         width: auto;
-        /*flex-wrap: wrap;*/
         align-items: center;
     }
 
@@ -706,7 +705,6 @@ Footer
 
 @media screen and (max-width: 768px) {
     .filterTitle {
-        margin-right: 40px;
         margin-left: 4%;
         margin-right: 4%;
     }
