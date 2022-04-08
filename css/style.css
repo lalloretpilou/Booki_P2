@@ -593,16 +593,14 @@ Footer
 
 .footerColumn {
     display: flex;
-    max-width: 100%;
-    width: 1440px;
     margin: auto;
     padding: 0 20px;
     box-sizing: border-box;
+    justify-content: flex-start;
 }
 
 .footerColumnItem {
-    width: 30%;
-    padding: 20px 20px;
+    margin-right: 20%;
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
@@ -619,15 +617,17 @@ Footer
         border-top: none;
     }
 
-    .filterTitle {
-        display: none;
-    }
     .filters {
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+        /*flex-wrap: wrap;*/
         align-items: center;
-        text-align: center;
+    }
+
+    .filtersDivision {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .header, .firstSection {
@@ -829,9 +829,9 @@ Footer
 
     .filters {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
         width: auto;
+        flex-wrap: wrap;
     }
 
     .searchFormSubmitInputText {
@@ -861,6 +861,11 @@ Footer
         line-height: 25px;
     }
 
+    .filtersDivision {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .economiqueFilterItems,
     .animauxFilterItems,
     .familialFilterItems,
@@ -877,6 +882,7 @@ Footer
         position: relative;
         transition-duration: 0.5s;
         text-align: justify;
+        margin: 2%;
     }
 
     .searchFiltersSubtitle {
@@ -888,15 +894,9 @@ Footer
     .footerColumn {
         display: flex;
         flex-direction: column;
-        max-width: auto;
         margin: auto;
         padding: 0 10px;
         box-sizing: border-box;
-    }
-
-    .footerColumnItem {
-        width: 30%;
-        padding: 10px 10px;
     }
 
     .lesPlusPopulairesItems {
