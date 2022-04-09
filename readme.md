@@ -1,5 +1,7 @@
 # Booki Project
 
+[Visiter le projet](https://lalloretpilou.github.io/Booki_Project.github.io/)
+
 ## Présentation
 
 Il s'agit de mon premier projet en HTML5 et CSS3.
