@@ -16,6 +16,8 @@ Il nous est aussi demandé de faire le responsive de la page à savoir l'adpater
 Analyser la maquette pour la découper et ainsi determiner les les différentes sections HTML. Il est important d'utiliser des balises sémantique afin d'optimiser à la fois la structure mais aussi la vitesse de la page.
 
 Une fois le découpage efféctué, il convient de commencer à coder en commençant par le haeder et de descendre au fur et à mesure sur la page.
+
+![ScreenShot](assets/P2model.jpg)
 ### Sections
 
 ![ScreenShot](assets/section1.png)
@@ -36,4 +38,6 @@ Nous utilisons la technologie 'FlexBox" dans ce projet. Grâce à celle-ci, nous
 
 ### Mobile & Tablette
 
-La page web doit être responsive c'est a dire qu'elle devra s'adapter aux petits écrans. Pour cela, la UX designer nous a iposée des tailles d'écran afin de mieux gerer le responsive et nous a communiquée une maquette pour les mobiles.
+La page web doit être responsive c'est a dire qu'elle devra s'adapter aux petits écrans. Pour cela, la UX designer nous a iposée des tailles d'écran afin de mieux gérer le responsive et nous a communiquée une maquette pour les mobiles.
+
+![ScreenShot](assets/booki_ios.png)
