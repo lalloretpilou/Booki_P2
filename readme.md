@@ -1,6 +1,6 @@
 # Booki Project
 
-[Visiter le projet](https://lalloretpilou.github.io/Booki_Project.github.io/)
+[Voir le projet](https://lalloretpilou.github.io/Booki_Project.github.io/)
 
 ## Présentation
 
