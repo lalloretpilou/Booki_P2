@@ -220,6 +220,7 @@ Search bar
 }
 
 .searchFormSubmitInputText {
+    font-size: 800;
     display: block !important;
 }
 
@@ -316,7 +317,7 @@ Filters
     content: '\f53a';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
-    padding: 13px;
+    padding: 15px;
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -326,7 +327,7 @@ Filters
     content: '\f6d3';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
-    padding: 13px;
+    padding: 15px;
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -336,7 +337,7 @@ Filters
     content: '\f1ae';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
-    padding: 13px 15px;
+    padding: 15px 17px;
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -346,7 +347,7 @@ Filters
     content: '\f004';
     font-family: "Font Awesome 5 Free";
     background: #DEEBFF;
-    padding: 13px;
+    padding: 15px;
     border-radius: 50%;
     margin-left: -30px;
 }
@@ -634,6 +635,22 @@ Footer
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
+
+    .filtersSection {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchFiltersSubtitle {
+        margin-top: 0px;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+    }
 
     .headerNavItem[data-active=true] {
         color: #0065FC;
@@ -938,6 +955,7 @@ Footer
         position: relative;
         transition-duration: 0.5s;
         text-align: justify;
+        margin-bottom: 3%;
     }
 
     .searchFiltersSubtitle {
