@@ -753,8 +753,8 @@ Footer
 @media screen and (max-width: 768px) {
 
     .filterTitle {
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .header {
@@ -838,8 +838,8 @@ Footer
     .activitesMarseille {
         display: flex;
         flex-direction: column;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .columnInter {
@@ -875,8 +875,8 @@ Footer
     }
 
     .searchFormSection {
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .activiteCardLarge {
@@ -978,7 +978,16 @@ Footer
     }
 
     .lesPlusPopulaireHeader {
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .header,
+    .firstSection,
+    .SearchAndFilter,
+    .MarseilleDivision,
+    .ActivitesDivision {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
